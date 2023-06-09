@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name-="Description" content="Portfolio Website" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/03b7482dfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo.gif" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm<span> Roja S M </span><br />from Bangalore</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Closing of Header Section -->
+
+    <!-- About Section -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I'm currently looking for a Full Stack Developer Role. As a
+              quick learner and problem solver I would like to take a
+              challenging and creative role in a reputed company that would give
+              me enough opportunity to steer towards fulfilling the company's
+              objective while fostering team spirit with a commitment to company
+              excellence. I am capable of completing all my tasks properly in a
+              given period of time. I'm also creative and willing to learn new
+              strategies and techniques in software development
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- skills -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span></li>
+                <li>
+                  <span>Cascading Style sheet</span>
+                </li>
+                <li><span>JavaScript</span><br />React JS , JQuery</li>
+                <li>
+                  <span>BootStrap, Material UI</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Experiance -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Personal Portfolio</span><br />Personal Portfolio using
+                  HTML,CSS,JavaScript
+                </li>
+                <li>
+                  <span>Project-1</span><br />
+                  Movie App using ReactJS,Material UI
+                </li>
+                <li>
+                  <span>Project-2</span><br />Recipe Finder App using
+                  ReactJS,StyledComponents
+                </li>
+                <li>
+                  <span>Project-3</span><br />Spotify Clone App using
+                  ReactJS,BootStrap
+                </li>
+                <li>
+                  <span>Project-4</span><br />Quiz App using ReactJS,Material UI
+                </li>
+              </ul>
+            </div>
+            <!-- Education -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Post-Graduation</span><br />Master of Business
+                  Application - JSS Academy of Technical Education
+                </li>
+                <li>
+                  <span> Under-Graduation</span><br />Bachelour of Computer
+                  Applications -Shantiniketan Institutions
+                </li>
+                <li>
+                  <span>Pre-University</span><br />
+                  PCMCs(Physics,Chemistry,Maths,Computer-Science) - Jain
+                  University
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Closing About Section -->
+
+    <!-- Portfolio Section  -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/Recipe.jpg" />
+            <div class="layer">
+              <h3>Recipe Finder</h3>
+              <p>
+                The project is Built using ReactJs,MaterialUI, StyledComponents
+                and Axios where user can find any recipes by ging its name.
+              </p>
+              <a
+                href="https://ubiquitous-lebkuchen-cd934c.netlify.app/
+              "
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/Quiz.jpeg" />
+            <div class="layer">
+              <h3>Qizz App</h3>
+              <p>
+                The project is Built using ReactJs,MaterialUI, and Axios where
+                user can select the area of questions they want to attend the
+                quiz and difficulty level.After completion of the Quiz Scores
+                will be displayed.
+              </p>
+              <a href="https://papaya-pie-d78d3c.netlify.app/ "
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/movie.jpg" />
+            <div class="layer">
+              <h3>Movie App</h3>
+              <p>
+                The project is Built using ReactJs,MaterialUI and Axios where
+                user can find trending Movies,Series,they can filter by the
+                content as per the choice and can search their fav movies and
+                series and they can watch a trailer in youtube
+              </p>
+              <a href="https://whimsical-queijadas-7a8a4c.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/Music.webp" />
+            <div class="layer">
+              <h3>Spotify Clone App</h3>
+              <p>
+                The project is Built using ReactJs,Bootstrap and Axios where
+                user can find trending Songs they can search their fav songs and
+                they can listen a trailer song of 29s
+              </p>
+              <a href="https://elaborate-mandazi-4e9f2d.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- Closing of Portfolio section -->
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fas fa-solid fa-paper-plane"></i>smroja103@gmail.com
+            </p>
+            <p><i class="fas fa-solid fa-phone-square-alt"></i>9686732378</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="./ROJA's Resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Contact Section -->
+
+    <!-- Footer -->
+    <div class="copyright">
+      <p>Copyright &#x24B8;Rojasm</p>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
